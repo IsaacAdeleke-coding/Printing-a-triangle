@@ -7,8 +7,20 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter the number of rows for the triangle: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= i; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
